@@ -1,7 +1,9 @@
 package com.example.demo_service;
 
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.IBinder;
 
@@ -26,7 +28,7 @@ public class ExampleStartService extends Service {
                 case 1:
                     int a = (Integer) msg.obj;
                     if (a == 100) {
-                        stopSelf();
+                        //stopSelf();
                         //logger.deleteSDcardExpiredLog();
                     }
                     break;
@@ -36,12 +38,25 @@ public class ExampleStartService extends Service {
         ;
     };
     private Thread myThread;
+    private SharedPreferences mySharedPre;
+    private SharedPreferences.Editor editor;
+    private MyApplication myapp;
 
     @Override
     public void onCreate() {
         super.onCreate();
+       // mySharedPre=getSharedPreferences("serverDestoryFlag", Context.MODE_PRIVATE);
+       // editor=mySharedPre.edit();
         logger = LoggerUtils.getInstance(getApplicationContext());
+        myapp=(MyApplication)getApplication();
+       // editor.putBoolean("ExampleStartServiceIsDestory",false);
+      //  editor.apply();
         logger.v(TAG, "onCreate()");
+        logger.deleteLatestLog();
+        if (null == myThread) {
+            myThread = new Thread(PeriodRunnable.getInstance(3000, mHandler, logger,1,myapp));
+            myThread.start();
+        }
     }
 
     @Override
@@ -54,17 +69,17 @@ public class ExampleStartService extends Service {
             logger.v(TAG, "onStartCommand()"
                     + "-->intent=null" + "startId=" + startId);
         }
-
-        if (null == myThread) {
-            myThread = new Thread(PeriodRunnable.getInstance(3000, mHandler, logger, 1));
-            myThread.start();
-        }
         return super.onStartCommand(intent, flags, startId);
     }
 
     @Override
     public void onDestroy() {
-        logger.v(TAG, "onDestroy()");
+        logger.v(TAG, "onDestroy()"+"--ExampleStartServiceFlag="+new MyApplication().getExampleStartServiceFlag());
+      //  editor.putBoolean("ExampleStartServiceIsDestory",true);
+      //  editor.apply();
+        // myThread.destroy();
+        myapp.setExampleStartServiceFlag(true);
+        logger.v(TAG, "ExampleStartServiceFlag="+myapp.getExampleStartServiceFlag());
         super.onDestroy();
     }
 

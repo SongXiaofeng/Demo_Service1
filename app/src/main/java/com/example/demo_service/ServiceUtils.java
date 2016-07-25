@@ -23,7 +23,7 @@ public class ServiceUtils {
   
         for (int i=0; i<serviceList.size(); i++) {  
         	Log.d("sxf",serviceList.get(i).service.getClassName());
-        	if (serviceList.get(i).service.getClassName().equals(className) == true) {  
+        	if (serviceList.get(i).service.getClassName().equals(className)) {
                 isRunning = true;  
                 break;  
             }  

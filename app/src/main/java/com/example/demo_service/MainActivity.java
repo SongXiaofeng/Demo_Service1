@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         logger = LoggerUtils.getInstance(getApplicationContext());
-
+        logger.deleteLatestLog();
         bt1=(Button)findViewById(R.id.bt1);
         bt2=(Button)findViewById(R.id.bt2);
 
@@ -63,15 +63,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while (!Thread.currentThread().isInterrupted()) {
                     try {
-                        Thread.sleep(8000);
+
                         if (ServiceUtils.isServiceRunning(getApplicationContext(), ExampleStartService.class.getName())) {
                             logger.v(ExampleStartService.class.getName() + " is running");
                         } else {
                             logger.v(ExampleStartService.class.getName() + " is not running");
                         }
-
+                        Thread.sleep(8000);
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
@@ -82,7 +82,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void exampleBindService() {
-
         Intent intent = new Intent();
         intent.putExtra("StartServicenName", exampleStartService);
         intent.setClass(this, ExampleStartService.class);
@@ -90,12 +89,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void exampleStartService() {
-
         Intent intent = new Intent();
         intent.putExtra("StartServicenName", exampleStartService);
         intent.setClass(this, ExampleStartService.class);
         startService(intent);
-
     }
 
     @Override
