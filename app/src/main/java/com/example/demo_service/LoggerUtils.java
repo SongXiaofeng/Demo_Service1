@@ -34,7 +34,7 @@ public class LoggerUtils {
 
     LoggerUtils() {
 
-        // sxf add  0723
+        // sxf add  0723cd
         //	deleteLatestLog();
 
         if (mIsWriteToFile) {

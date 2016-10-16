@@ -10,6 +10,9 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.example.demo_service.MyApplication"
         android:allowBackup="true"
@@ -35,6 +38,11 @@
             android:name="com.example.demo_service.ExampleBindService"
             android:exported="false" >
         </service>
+
+        <activity
+            android:name="com.example.demo_service.BtestActivity"
+            android:label="@string/title_activity_btest" >
+        </activity>
     </application>
 
 </manifest>

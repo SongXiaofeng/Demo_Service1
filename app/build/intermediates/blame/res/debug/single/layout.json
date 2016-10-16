@@ -2,5 +2,13 @@
     {
         "merged": "C:\\Users\\leon\\AndroidStudioProjects\\Demo_Service1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\leon\\AndroidStudioProjects\\Demo_Service1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android_studio_workspace\\Demo_Service1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Android_studio_workspace\\Demo_Service1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_btest.xml",
+        "source": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\layout\\activity_btest.xml"
     }
 ]
