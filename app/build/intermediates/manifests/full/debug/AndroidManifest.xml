@@ -32,17 +32,22 @@
         <service
             android:name="com.example.demo_service.ExampleStartService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
         <service
             android:name="com.example.demo_service.ExampleBindService"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
 
         <activity
             android:name="com.example.demo_service.BtestActivity"
-            android:label="@string/title_activity_btest" >
-        </activity>
+            android:label="@string/title_activity_btest" />
+
+        <service
+            android:name="com.example.demo_service.ExampleIntentService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.test.intentservice" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

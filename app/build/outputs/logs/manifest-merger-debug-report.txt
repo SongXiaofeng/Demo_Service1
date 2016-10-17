@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:2:1-48:12
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml
@@ -39,7 +39,7 @@ ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifes
 	android:name
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:14:30-85
 application
-ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:16:5-46:19
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:16:5-52:19
 MERGED from [com.android.support:support-v4:23.4.0] D:\Android_studio_workspace\Demo_Service1\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:20:9-41
@@ -68,7 +68,7 @@ ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifes
 	android:name
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:28:27-74
 service#com.example.demo_service.ExampleStartService
-ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:32:9-36:19
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:32:9-35:48
 	android:enabled
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:34:13-35
 	android:exported
@@ -76,14 +76,26 @@ ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifes
 	android:name
 		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:33:13-48
 service#com.example.demo_service.ExampleBindService
-ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:37:9-40:19
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:36:9-38:48
 	android:exported
-		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:38:13-47
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:37:13-47
 activity#com.example.demo_service.BtestActivity
-ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:42:9-45:20
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:40:9-42:69
 	android:label
-		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:44:13-57
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:42:13-57
 	android:name
-		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:43:13-42
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:41:13-42
+service#com.example.demo_service.ExampleIntentService
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:44:9-50:19
+	android:exported
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:45:13-49
+intent-filter#com.test.intentservice
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:47:9-49:25
+action#com.test.intentservice
+ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:48:13-60
+	android:name
+		ADDED from D:\Android_studio_workspace\Demo_Service1\app\src\main\AndroidManifest.xml:48:21-58

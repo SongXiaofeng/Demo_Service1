@@ -42,6 +42,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements View.OnClickListener {
     private final String exampleStartService = "ExampleStartService";
     private final String exampleBindService = "ExampleBindService";
+    private final String exampleIntentService= "ExampleIntentService";
     private LoggerUtils logger;
     private Button bt_start_service;
     private Button bt_bind_service;
@@ -70,7 +71,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Log.i(TAG, "ActivityA onServiceDisconnected");
         }
     };
-
+    private Button intent_service;
 
 
     @Override
@@ -85,12 +86,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         bt_stop_start_service=(Button)findViewById(R.id.stop_start_service);
         bt_ubind_service=(Button)findViewById(R.id.stop_bind_service);
         bt_begin_anotherActivity=(Button)findViewById(R.id.begin_anotherActivity);
+        intent_service=(Button)findViewById(R.id.intent_service);
 
         bt_start_service.setOnClickListener(this);
         bt_bind_service.setOnClickListener(this);
         bt_stop_start_service.setOnClickListener(this);
         bt_ubind_service.setOnClickListener(this);
         bt_begin_anotherActivity.setOnClickListener(this);
+        intent_service.setOnClickListener(this);
 
       //  exampleStartService();
       //  exampleBindService();
@@ -135,6 +138,23 @@ public class MainActivity extends Activity implements View.OnClickListener {
         startService(intent);
     }
 
+    private void exampleIntentService() {
+        //可以启动多次，每启动一次，就会新建一个work thread，但IntentService的实例始终只有一个
+        //Operation 1
+        Intent startServiceIntent = new Intent("com.test.intentservice");
+        Bundle bundle = new Bundle();
+        bundle.putString("param", "oper1");
+        startServiceIntent.putExtras(bundle);
+        startService(startServiceIntent);
+
+        //Operation 2
+        Intent startServiceIntent2 = new Intent("com.test.intentservice");
+        Bundle bundle2 = new Bundle();
+        bundle2.putString("param", "oper2");
+        startServiceIntent2.putExtras(bundle2);
+        startService(startServiceIntent2);
+    }
+
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -159,6 +179,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.begin_anotherActivity:
                 startActivity(new Intent(this,BtestActivity.class));
+                break;
+            case R.id.intent_service:
+                exampleIntentService();
                 break;
 
 

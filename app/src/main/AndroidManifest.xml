@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demo_service"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="18"
@@ -18,10 +18,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,17 +32,23 @@
         <service
             android:name=".ExampleStartService"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false"></service>
         <service
             android:name=".ExampleBindService"
-            android:exported="false" >
-        </service>
+            android:exported="false"></service>
 
         <activity
             android:name=".BtestActivity"
-            android:label="@string/title_activity_btest" >
-        </activity>
+            android:label="@string/title_activity_btest"></activity>
+
+        <service
+            android:name=".ExampleIntentService"
+            android:exported="false">
+        <intent-filter >
+            <action android:name="com.test.intentservice"/>
+        </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

@@ -239,14 +239,7 @@
                     "endOffset": 339
                 },
                 "from": {
-                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 460,
-                        "endColumn": 71,
-                        "endOffset": 527
-                    }
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -258,14 +251,7 @@
                     "endOffset": 392
                 },
                 "from": {
-                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 276,
-                        "endColumn": 52,
-                        "endOffset": 324
-                    }
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -285,17 +271,17 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 450,
-                    "endColumn": 54,
-                    "endOffset": 500
+                    "endColumn": 56,
+                    "endOffset": 502
                 },
                 "from": {
                     "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 220,
-                        "endColumn": 54,
-                        "endOffset": 270
+                        "startOffset": 597,
+                        "endColumn": 56,
+                        "endOffset": 649
                     }
                 }
             },
@@ -303,67 +289,58 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 505,
-                    "endColumn": 62,
-                    "endOffset": 563
+                    "startOffset": 507,
+                    "endColumn": 54,
+                    "endOffset": 557
                 },
                 "from": {
-                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 396,
-                        "endColumn": 62,
-                        "endOffset": 454
-                    }
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 568,
-                    "endColumn": 64,
-                    "endOffset": 628
+                    "startOffset": 562,
+                    "endColumn": 62,
+                    "endOffset": 620
                 },
                 "from": {
-                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 330,
-                        "endColumn": 64,
-                        "endOffset": 390
-                    }
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 633,
-                    "endColumn": 62,
-                    "endOffset": 691
+                    "startOffset": 625,
+                    "endColumn": 64,
+                    "endOffset": 685
                 },
                 "from": {
-                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 533,
-                        "endColumn": 62,
-                        "endOffset": 591
-                    }
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 696,
-                    "endLine": 19,
+                    "startOffset": 690,
+                    "endColumn": 62,
+                    "endOffset": 748
+                },
+                "from": {
+                    "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 753,
+                    "endLine": 20,
                     "endColumn": 12,
-                    "endOffset": 982
+                    "endOffset": 1039
                 },
                 "from": {
                     "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\styles.xml"
@@ -371,12 +348,12 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 987,
-                    "endLine": 22,
+                    "startOffset": 1044,
+                    "endLine": 23,
                     "endColumn": 12,
-                    "endOffset": 1142
+                    "endOffset": 1199
                 },
                 "from": {
                     "file": "D:\\Android_studio_workspace\\Demo_Service1\\app\\src\\main\\res\\values\\styles.xml"

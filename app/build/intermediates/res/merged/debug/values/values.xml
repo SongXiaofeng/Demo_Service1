@@ -7,6 +7,7 @@
     <string name="begin_anotherActivity">begin_anotherActivity</string>
     <string name="bind_service">bindService</string>
     <string name="hello_world">Hello world!</string>
+    <string name="intent_service">intentService</string>
     <string name="start_service">startService</string>
     <string name="stop_bind_service">stop_bindService</string>
     <string name="stop_start_service">stop_startService</string>
